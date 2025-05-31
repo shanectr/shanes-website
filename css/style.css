@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --text-primary: white;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.1em;
+}
+
+/* Hero Section */
+.hero-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+
+#hero-section img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-container h1,
+.hero-container h2 {
+  color: var(--text-primary);
+}
+
+.hero-container h1 {
+  font-size: 60px;
+}
+
+.hero-container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Info Section */
+.info-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6d6d6;
+  color: salmon;
+}
+
+.info-container h2 {
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.info-container img {
+  border-radius: 999px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: top;
+  border: 5px solid salmon;
+  margin-bottom: 50px;
+}
+
+.info-container p {
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Skills Section */
+#skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: salmon;
+  color: #f6d6d6;
+}
+
+#skills-section h2 {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.skills {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+  gap: 150px;
+  justify-content: center;
+}
+
+.skills-container {
+  width: 400px;
+}
+
+.skills-container img {
+  width: 400px;
+  height: 260px;
+  border: 3px solid #f6d6d6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.inner-container h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.inner-container p {
+  font-size: 18px;
+}
+
+/* Connect Section */
+
+#connect-section {
+  background-color: #f6d6d6;
+  color: salmon;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.connect-container h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.connect-container p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.connect-statement {
+  margin-bottom: 20px;
+}
+
+.connect-c2a {
+  margin-bottom: 50px;
+}
+
+.connect-container button {
+  font-size: 22px;
+  border: none;
+  background-color: salmon;
+  color: #f6d6d6;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+  width: 100%;
+  background-color: salmon;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 18px;
+  color: #f6d6d6;
+}
+
+.foot-container {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.foot-container a {
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.foot-container a:link {
+  color: #f6d6d6;
+}
+
+.foot-container a:visited {
+  color: #602d2d;
+}
+
+.foot-container a:hover {
+  color: #e73006;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container img {
+    width: 300px;
+  }
+
+  .skills-container {
+    width: 300px;
+  }
+}
