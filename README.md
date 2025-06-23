@@ -1,2 +1,1 @@
-# capstone-project-2
-capstone-project-section-13
+# 2nd capstone project from section 13 of Udemy Course
